@@ -4,7 +4,7 @@ public class Calculate {
     public double numberOne = 0;
     public double numberTwo = 0;
     public char symbol;
-    public double inputInfoOne() throws Exception{
+    public double inputInfoOne() {
         System.out.println("Введите первое число");
         Scanner in = new Scanner(System.in);
         numberOne = in.nextDouble();
@@ -13,7 +13,7 @@ public class Calculate {
     public double getInputInfoOne(){
         return numberOne;
     }
-    public char inputInfoTwo() throws Exception {
+    public char inputInfoTwo() {
         System.out.println("Введите знак +, -, * или /");
         Scanner in = new Scanner(System.in);
         symbol = in.next().charAt(0);
@@ -22,7 +22,7 @@ public class Calculate {
     public char getInputInfoTwo(){
         return symbol;
     }
-    public double inputInfoThree() throws Exception{
+    public double inputInfoThree(){
         System.out.println("Введите второе число");
         Scanner in = new Scanner(System.in);
         numberTwo = in.nextDouble();
